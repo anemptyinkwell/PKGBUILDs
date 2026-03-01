@@ -1,0 +1,5 @@
+#Type	Name		ID		GECOS				Home directory		Shell
+g	speakersafetyd	547	
+u	speakersafetyd	547		"speakersafetyd program user"	/var/lib/speakersafetyd -
+m	speakersafetyd	speakersafetyd
+m	speakersafetyd	audio

@@ -1,0 +1,4 @@
+post_install() {
+    systemd-sysusers "${pkgdir}/usr/lib/sysusers.d/speakersafetyd.conf"
+}
+

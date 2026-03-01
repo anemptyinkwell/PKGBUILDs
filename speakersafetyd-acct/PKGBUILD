@@ -1,0 +1,20 @@
+# Maintainer: Jos Dehaes <jos.dehaes@gmail.com>
+# Maintainer: Matthias Kurz <m.kurz@irregular.at>
+
+pkgname=speakersafetyd-acct
+pkgver=1.1.2
+pkgrel=1
+pkgdesc='Asahi Linux speaker safety daemon user and group'
+arch=('aarch64')
+url='http://asahilinux.org'
+depends=()
+license=()
+source=(
+  "speakersafetyd.sysusers"
+)
+sha256sums=('508448758e3ede0414048e88178646791a376e2e509f237a8f0af22ad0253872')
+install="${pkgname}.install"
+
+package() {
+  install -Dm644 "${srcdir}/speakersafetyd.sysusers" "${pkgdir}/usr/lib/sysusers.d/speakersafetyd.conf"
+}
